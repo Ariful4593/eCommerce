@@ -1,0 +1,19 @@
+.img:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.2); 
+    transition: .5s;
+}
+.btn-outline-primary{
+    color: #ff6a00;
+    border-color: #ff6a00;
+}
+.home-category-banner {
+    position: relative;
+    padding: 30px;
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    background-color: red;
+}

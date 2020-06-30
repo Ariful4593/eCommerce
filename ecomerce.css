@@ -1,0 +1,13 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	
+}
+#t1 {
+  -moz-tab-size: 4; /* Firefox */
+  -o-tab-size: 4; /* Opera 10.6-12.1 */
+  tab-size: 4;
+}
+.list-group li{
+	list-style-type: none
+}
