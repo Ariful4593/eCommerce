@@ -1,3 +1,31 @@
+
+.search-btn{
+    border-radius: 5px 10px 10px 5px;
+    color: white;
+    background-color: #ff6a00;
+    border: none;
+}
+.serch-bar{
+    /* background-color: #ff6a00; */
+    border-radius: 5px 10px 10px 5px;
+    /* padding: 2px; */
+}
+.icon, .icon, .icon, .icon{
+    font-size: 30px;
+    color: darkgray;
+}
+.icon:hover{
+    color: black;
+}
+.my-market a{
+    color: lightslategray;
+    text-decoration: none;
+    
+}
+ .my-market a:hover{
+    color: #ff6a00;
+}
+
 .img:hover{
     -ms-transform: scale(1.5); /* IE 9 */
     -webkit-transform: scale(1.5); /* Safari 3-8 */
@@ -15,5 +43,98 @@
     overflow: hidden;
 }
 body{
-    background-color: red;
+   
+    font-family: 'Poppins', sans-serif  ;
 }
+.apparel-left-content{
+    background-color: orange;
+    border-radius: 5px;
+}
+.apparel-product{
+    border-radius: 5px;
+    box-shadow: 10px 10px 40px gray;
+    background-color: floralwhite;
+}
+.reco-item{
+    border-radius: 5px;
+    box-shadow: 10px 10px 100px grey;
+    padding: 2%;
+    
+}
+.reco-item:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.05); 
+    transition: .5s;
+}
+.reco-item-content{
+    border-bottom: 7px solid;
+    border-image: linear-gradient(180deg, #4ed16c, #1f7777);
+    border-image-slice: 1;
+}
+
+
+#signUp-form{
+    display: none;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+#cart-plus-increase{
+    color: red;
+    
+}
+a:hover{
+    text-decoration: none;
+}
+
+.full-image{
+    position: relative;
+}
+.images{
+    display: block;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+
+  .full-image:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .bag-offer h6,p{
+      text-align: center;
+  }

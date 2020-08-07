@@ -43,10 +43,10 @@ var myFather3 = new Karim('Shirajul Islam','Shamim Akter','Khagoria', 'Chittagon
 var myFather4 = new Nafim('Shirajul Islam','Shamim Akter','Khagoria', 'Chittagong');
 var myFather5 = new Singh('Shirajul Islam','Shamim Akter','Khagoria', 'Chittagong','images/jacket.jpg');
 // console.log(myFather,myFather1,myFather2);
-x = document.getElementsByClassName("bage").src;
-document.getElementsByClassName("demo").innerHTML = x;
+
 array = [myFather,myFather1,myFather2,myFather3,myFather4,myFather5];
 for(i=0;i<6;i++)
 {
     console.log(array[i]);  
 }
+// document.getElementById("demo").innerHTML = window.location.href;
