@@ -138,3 +138,10 @@ a:hover{
   .bag-offer h6,p{
       text-align: center;
   }
+
+  .footer-item a{
+      color: white;
+  }
+  .footer-item li{
+      list-style-type: none;
+  }

@@ -135,19 +135,21 @@ function apparelFunction(apparelId, apparelImage){
     const newP = document.createElement("p");
     const newI = document.createElement("i")
     const image = document.createElement("img")
+    const newA = document.createElement("a");
 
     image.setAttribute("src", apparelImage[i])
     image.setAttribute("class", "img w-100 h-100")
 
     newP.setAttribute("class", "text-muted")
     newP.appendChild(newI);
+
     newI.setAttribute("class", "fa fa-map-marker");
     newI.textContent = "Gujrat,India"
 
     newh6.setAttribute("class", "font-weight-bold text-muted");
     newh6.textContent = "Well Made Women Clothes with trending Collection";
 
-    const newA = document.createElement("a");
+    
     newA.setAttribute("href", "#");
     newA.setAttribute("id", "apparelProduct")
     newA.appendChild(newh6)
@@ -169,10 +171,102 @@ function apparelFunction(apparelId, apparelImage){
     divFour.setAttribute("class", "col-6");
     divFour.appendChild(newP)
 
-
-    
     divFive.setAttribute("class", "col-6")
     divFive.appendChild(image)
     
 }
+}
+const recomendImage = ["images/t-shirt.jpg","images/t-shirt1.jpg","images/t-shirt2.jpg","images/t-shirt3.jpg","images/t-shirt4.jpg","images/t-shirt5.jpg",]
+RecomendedArea("recomended-area")
+RecomendedArea("recomended-area1")
+
+//Recomended Area...
+function RecomendedArea(recomendItem){
+    for(var i = 0; i < 6; i++)
+    {
+        const recomendArea = document.getElementById(recomendItem);
+        const divOne = document.createElement("div");
+        const divTwo = document.createElement("div");
+        const divThree = document.createElement("div");
+        const img = document.createElement("img");
+        const a = document.createElement("a");
+        const p = document.createElement("P");
+        const strong = document.createElement("strong");
+    
+        divOne.setAttribute("class", "col-6 col-sm-6 col-md-4 col-lg-2 w-100 h-100 reco-item");
+        divTwo.setAttribute("class", "card");
+        img.setAttribute("src", recomendImage[i]);
+        img.setAttribute("class", "w-100 h-100");
+        divThree.setAttribute("class", "card-body reco-item-content");
+        a.setAttribute("href", "#");
+        a.textContent = "Just Another Product";
+        p.textContent = "$179.00";
+    
+        recomendArea.appendChild(divOne)
+        divOne.appendChild(divTwo);
+        divOne.appendChild(divThree)
+        divTwo.appendChild(img);
+        divThree.appendChild(a);
+        divThree.appendChild(strong);
+        strong.appendChild(p);
+        
+    }
+}
+
+//Trade Service Area...
+const tradeImage = ["images/juice.jpg","images/juice1.jpg","images/juice2.jpg","images/juice3.jpg"]
+tradeService("tradeArea");
+
+function tradeService(tradearea){
+    for(var i = 0; i < 4; i++)
+    {
+        const tradeareal = document.getElementById(tradearea);
+        const divOne = document.createElement("div");
+        const divTwo = document.createElement("div");
+        const divThree = document.createElement("div");
+        const img = document.createElement("img");
+        const a = document.createElement("a");
+        const p = document.createElement("P");
+        const strong = document.createElement("strong");
+    
+        divOne.setAttribute("class", "col-6 col-sm-6 col-md-3 col-lg-3 w-100 h-100 pr-0 trade-item");
+        divTwo.setAttribute("class", "card");
+        img.setAttribute("src", tradeImage[i]);
+        divThree.setAttribute("class", "card-body text-center");
+        a.setAttribute("href", "#");
+        a.textContent = "Trade Assiramce";
+        p.textContent = "ORDER PROTECTION";
+        p.setAttribute("class", "text-muted")
+    
+        tradeareal.appendChild(divOne)
+        divOne.appendChild(divTwo);
+        divOne.appendChild(divThree)
+        divTwo.appendChild(img);
+        divThree.appendChild(strong);
+        divThree.appendChild(p);
+        strong.appendChild(a);
+        
+    }
+}
+
+// Region Area...
+
+const regionText = [" China"," Germany"," Nepal"," Bhutan"," Pakistan"," Maldives"," Srilanka"," Malaysia"," Vietname"," Italy", " Barmuda", " Colombia"]
+regionArea("region")
+function regionArea(regionItem){
+    for(let i = 0; i < 12; i++)
+    {
+        const region = document.getElementById(regionItem);
+        const divOne = document.createElement("div");
+        const h4 = document.createElement("h4");
+        const a = document.createElement("a");
+        divOne.setAttribute("class", "col-6 col-sm-6 col-md-2 col-lg-2 w-100 h-100 pr-0");
+        h4.setAttribute("class", "fa fa-automobile");
+        a.setAttribute("href", "#");
+        a.textContent = regionText[i]
+        divOne.appendChild(h4);
+        h4.appendChild(a)
+        region.appendChild(divOne)
+        
+    }
 }
