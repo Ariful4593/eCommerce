@@ -32,20 +32,6 @@ buyNowBtn("buy-now-2","main-product-2","product-price-2", "cart-plus-increase","
 buyNowBtn("buy-now-3","main-product-3","product-price-3", "cart-plus-increase","myList")
 
 var test = document.getElementsByClassName("apparel-product");
-// var color = ["red", "blue","green","lightgray"]
-// for(i=0;i<test.length;i++)
-// {
-//     test[i].style.backgroundColor = color[i]
-//     console.log(test[i]);
-// }
-
-// function apparelProduct(id){
-//     var apparel = document.getElementById(id);
-//     apparel.addEventListener("click", function(){
-//     location.replace("product-details.html")
-// })
-// }
-// apparelProduct("apparelProduct")
 
 class PopularCategory{
     constructor(name, source,image){
